@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace에는 인터페이스가 있는 파일의 경로를포함해서 넣는다.
+ 	<mapper namespace="com.mybatis.ma.dao.IDao"> 이부분이 가장 중요하다.-->
+<mapper namespace="com.mybatis.ma.dao.IDao">
+    <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="funkyNumber" property="funkyNumber"/>
+        <result column="roundingMode" property="roundingMode"/>
+    </resultMap>
+
+<!-- id는 메소드명 resultType은 메소드의 리턴타입 -->
+    <select id="listDao" resultType="com.mybatis.ma.dto.ContentDto">
+        select * from board2 ORDER BY MID DESC
+    </select>
+
+    <select id="viewDao" resultType="com.mybatis.ma.dto.ContentDto">
+        select * from board2 where mid = #{param1}
+    </select>
+	
+    <insert id="writeDao">
+        INSERT INTO board2(MID, MWRITER, MCONTENT) VALUES
+        (board2_seq.nextval, #{param1}, #{param2})
+    </insert>
+	
+	<delete id="deleteDao">
+		DELETE FROM board2 where MID=#{param1}
+	</delete>
+
+	
+
+<!--     <select id="getUser" resultMap="usermap">
+        select * from users
+    </select>
+    <insert id="insert">
+        insert into users (id, name, funkyNumber, roundingMode) values (
+            #{id}, #{name}, #{funkyNumber}, #{roundingMode}
+        )
+    </insert>
+
+    <resultMap type="org.apache.ibatis.submitted.rounding.User" id="usermap2">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="funkyNumber" property="funkyNumber"/>
+        <result column="roundingMode" property="roundingMode"
+         typeHandler="org.apache.ibatis.type.EnumTypeHandler"/>
+    </resultMap>
+    <select id="getUser2" resultMap="usermap2">
+        select * from users2
+    </select>
+    <insert id="insert2">
+        insert into users2 (id, name, funkyNumber, roundingMode) values (
+            #{id}, #{name}, #{funkyNumber}, #{roundingMode, typeHandler=org.apache.ibatis.type.EnumTypeHandler}
+        )
+    </insert> -->
+
+</mapper>
