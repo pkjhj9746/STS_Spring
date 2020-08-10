@@ -1,0 +1,136 @@
+/* (추가) 회원가입 CSS */
+		/* 헤더 */
+		#newmem {
+			font-size: 2.1em;
+			margin-block-start: 0.67em;
+			margin-block-end: 0.67em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-weight: bold;
+		}
+
+		#join-section{
+			display: inline-block;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			margin-bottom: -7em;
+			/* border: 1px solid lightgray; */
+			/* padding: 1em 1em; */
+		}
+
+		/* 메인 TEXT */
+		table th{
+			font-size:0.8em;
+		}
+
+		/* 아이디 확인 이모티콘 */
+		#id-check{
+			font-size: 0.6em;
+		}
+
+		/* 아이디 */
+		#newmem-id1{
+			display: inline-block;
+		}
+		#newmem-id{
+			width: 13.2em;
+			height: 2.3em;
+			display: inline-block;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
+		/* 비밀번호 */
+		#mem-password{
+			width: 13.2em;
+			height: 2.3em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+			
+		}
+
+		/* 비밀번호확인 */
+		#mem-password-check{
+			width: 13.2em;
+			height: 2.3em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+			
+		}
+
+		/* 이름 */
+		#mem-name{
+			width: 13.2em;
+			height: 2.3em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
+		/* 생일 */
+		#mem-birth{
+			margin-bottom: 1.87em;
+			
+		}
+
+		/* 메일 */
+		#mem-mail{
+			display: inline-block;
+			width: 7.6em;
+			height: 1em;
+			margin-bottom: 1.87em;
+			margin-top: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
+		/* 연락처 */
+		#mem-phonenum{
+			display: inline-block;
+			width: 3.8em;
+			height: 1em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+		}
+
+		/* 주소 */
+		#mem-add1{
+			display:inline-block;
+			width: 5em;
+			height: 1.2em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;
+			position: relative;
+			bottom: 0.2em;
+			
+		}
+		#mem-add2{
+			width: 25em;
+			margin-bottom: 1.87em;
+			font-size: 0.8em;
+			text-align: center;			
+		}
+
+		/*선택메뉴 사이즈조절*/
+		select{
+			font-size: 0.8em;
+		}
+
+		/*회원가입확인 아이콘*/
+		#button-con{
+			text-align: center;
+		}
+		#add-button{
+			width: 15em;			
+		}
+		
+		/*나머지 글자 사이즈 조절*/
+		.mem-font{
+			font-size:0.8em;
+		}
